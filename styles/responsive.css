@@ -92,6 +92,20 @@
             font-size: 24px; /* Smaller size for mobile */
             margin-left: 10%;
           }
+
+          .cyh-gallary-cards {
+            grid-template-columns: 1fr; /* Single column layout on very small screens */
+          }
+        
+          .cyh-gallary-card {
+            height: 220px; /* Adjust image height for very small screens */
+          }
+        
+          .cyh-title-section,
+          .cyh-title-desc-text {
+            margin-left: 0; /* Reset margin on small screens */
+            width: auto; /* Reset width for smaller screens */
+          }
           .bmi-form {
             grid-template-columns: 1fr;
           }

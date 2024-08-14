@@ -184,7 +184,7 @@ background-color: rgba(230, 83, 60, 1) ;
 }
 
 
-/* Main section styles goes here */
+/* Main section change your habbits styles goes here */
 .main-section-bg-color{
   background-color: rgba(0, 0, 0, 1);
   margin: 0 auto;
@@ -212,29 +212,20 @@ padding: 20px;
  padding: 10px;
  color: rgba(255, 255, 255, 0.5);
 }
-/* .cyh-gallary-section{
-  max-width: 1140px;
-  margin: 0 auto;
-  display: grid;
-  border: 2px solid red;
-  grid-template-areas: none
-  "a b c d"
-  ;
-} */
+
 .cyh-gallary-cards{
   max-width: 1140px;
   margin: 0 auto;
   display: grid;
-  /* border: 2px solid red; */
-  grid-template-areas:  "a b c d";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
 }
 .cyh-gallary-card{
-  width: 180px;
-  height: 180px;
+  width: 80%; 
+  height: 250px;
   border-radius: 100%;
-  align-items: center;
-  margin-left: 30px;
-  padding: 20px;
+  object-fit: cover; 
+  margin: 0 auto; 
 }
 
 .cyh-gallary-desc-text{
@@ -242,18 +233,7 @@ padding: 20px;
   font-size: 16px;
   text-align: center;
 }
-.card-one{
-  grid-area: a;
-}
-.card-two{
-  grid-area: b;
-}
-.card-three{
-  grid-area: c;
-}
-.card-four{
-  grid-area: d;
-}
+
 .image-title{
   text-align: center;
 }
@@ -733,7 +713,7 @@ body {
   overflow: hidden;
   width: 100%; /* Make sure the item takes full width of the grid cell */
   aspect-ratio: 1 / 1; /* Ensures square aspect ratio, adjust as needed */
-  background-color: rgba(0, 0, 0, 0.26);
+
 }
 
 .gallery-item img {
@@ -764,4 +744,27 @@ body {
   margin: 0;
   font-size: 1rem;
   line-height: 1.2;
+}
+.footer_section-container{
+  background-color: #212121;
+  max-width: 71.25rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.fitness-section{
+  width: 40%;
+}
+.get-started-right-section{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+
+}
+hr {
+  border: 0;
+  height: 3px;
+  background-color: #212121; /* Line color */
+  margin: 20px 0; /* Spacing around the line */
 }
