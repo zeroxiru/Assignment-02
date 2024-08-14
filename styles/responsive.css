@@ -94,7 +94,40 @@
           }
           .bmi-form {
             grid-template-columns: 1fr;
-        }
+          }
+    
+          .bmi-form input,
+          .bmi-form select,
+          .bmi-form button {
+            width: 100%;
+          }
+    
+          .bmi-cal-title-section,
+          .bmi-cal-desc-section {
+            margin-left: 0;
+            margin-right: 0;
+          }
+    
+          .bmi-container {
+            flex-direction: column;
+          }
+          .meet-our-team-header-section {
+            width: 100%; /* Full width for mobile devices */
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+          }
+        
+          .meet-our-team-header-section h1 {
+            font-size: 1.8rem; /* Smaller font for mobile */
+          }
+        
+          .meet-our-team-header-section p {
+            font-size: 0.85rem; /* Slightly smaller paragraph font */
+          }
+          .meet-our-team-gallary-section {
+            grid-template-columns: 1fr;
+          }
         
 }
 
