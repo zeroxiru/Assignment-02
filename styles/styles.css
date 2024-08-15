@@ -19,7 +19,7 @@
     display: flex;
 }
   .bground-color{
-   background-color: rgba(17, 17, 17, 1);
+    background-image: linear-gradient(to bottom, #111111, #0d0d0d, #090909, #050505, #000000);
   }
   .shared-text-color{
     color:rgba(230, 83, 60, 1)
@@ -193,7 +193,6 @@ background-color: rgba(230, 83, 60, 1) ;
 .cyh-title-section{
   width: 680px;
   height: 100px;
- 
   margin-left: 600px;
 }
 
@@ -214,7 +213,7 @@ padding: 20px;
 }
 
 .cyh-gallary-cards{
-  max-width: 1140px;
+  max-width: 71.25rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -247,14 +246,15 @@ padding: 20px;
   height: 400px;
   margin: 0 auto;
   background-color: rgba(34, 34, 34, 1);
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: absolute; */
+  
 }
 .run-extra-mile-text-section{
 
   max-width: 450px;
-  height: 300px;
+  height: auto;
   text-align: left; 
   margin-left: 30px;
   
@@ -745,26 +745,47 @@ body {
   font-size: 1rem;
   line-height: 1.2;
 }
-.footer_section-container{
+.full-footer-section{
   background-color: #212121;
-  max-width: 71.25rem;
   margin: 0 auto;
+}
+.footer-section-container {
+  
+  max-width: 71.25rem;
+  
+  display: flex;
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
+  margin-left: 370px;
 }
-.fitness-section{
-  width: 40%;
-}
-.get-started-right-section{
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  margin-right: 30px;
 
+.fitness-section {
+  width: 60%; /* Full width for column layout */
+  margin-bottom: 20px; /* Add spacing below */
 }
+
+.get-started-right-section {
+  width: 60%; /* Full width for column layout */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add spacing below */
+}
+
+.footer-text-color {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 hr {
+  width: 100%; 
   border: 0;
-  height: 3px;
-  background-color: #212121; /* Line color */
-  margin: 20px 0; /* Spacing around the line */
+  height: 2px;
+  background-color: #38353569; /* Line color */
+  margin: 20px 0; 
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
 }
